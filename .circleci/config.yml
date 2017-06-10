@@ -18,4 +18,6 @@ jobs:
       - run: ls
       - run: pwd -P
       - run: docker-compose up -d
+      - run: docker ps
+      - run: docker-compose ps
       - run: curl http://test.dev/index.html
