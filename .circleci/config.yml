@@ -13,4 +13,6 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: docker run -it docker/compose:1.13.0 up -d -v.:.
+      - run: apk add --update py-pip
+      - run: pip install docker-compose
+      - run: docker-compose up -d
