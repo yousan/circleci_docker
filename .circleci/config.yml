@@ -13,7 +13,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: apk add --update py-pip
+      - run: apk add --update py-pip curl
       - run: pip install docker-compose
       - run: ls
       - run: pwd -P
