@@ -6,9 +6,11 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/workspace
+    working_directory: ~/
     docker:
-      - image: notnoopci/php:7.1.5-browsers
+      - image: docker:17.03-git
 
     steps:
       - checkout
+      - setup_remote_docker
+      - docker-compose up -d
