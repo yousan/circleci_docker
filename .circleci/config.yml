@@ -22,5 +22,5 @@ jobs:
       - run: docker ps
       - run: docker-compose ps
 #      - run: ping -c 1 test.dev
-      - run: curl http://127.0.0.1/index.html
-      - run: curl http://test.dev/index.html
+#      - run: curl http://127.0.0.1/index.html
+      - run: curl http://php5.6-apache.dev/index.html
