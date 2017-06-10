@@ -13,4 +13,4 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - docker-compose up -d
+      - run: docker-compose up -d
