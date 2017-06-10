@@ -1,0 +1,14 @@
+# @link http://qiita.com/pine613/items/9ddea9ca89a1b51fcba8
+# @link https://github.com/masutaka/github-organization-watcher/pull/48/files
+# @link https://circleci.com/docs/2.0/sample-config/
+# @link https://circleci.com/docs/2.0/configuration-reference/#storetestresults
+
+version: 2
+jobs:
+  build:
+    working_directory: ~/workspace
+    docker:
+      - image: notnoopci/php:7.1.5-browsers
+
+    steps:
+      - checkout
