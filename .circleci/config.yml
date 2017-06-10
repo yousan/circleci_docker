@@ -15,5 +15,7 @@ jobs:
       - setup_remote_docker
       - run: apk add --update py-pip
       - run: pip install docker-compose
+      - run: ls
+      - run: pwd -P
       - run: docker-compose up -d
       - run: curl http://test.dev/index.html
