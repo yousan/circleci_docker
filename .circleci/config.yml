@@ -15,6 +15,7 @@ jobs:
       - setup_remote_docker
       - run: apk add --update py-pip curl
       - run: pip install docker-compose
+      - run: echo 'nameserver 127.0.0.1' > /etc/resolv.conf
       - run: ls
       - run: pwd -P
       - run: docker-compose up -d
